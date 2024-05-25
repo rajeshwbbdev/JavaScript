@@ -1,0 +1,20 @@
+const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+let value = arr.filter((num) => {
+  return num>5;
+})
+
+let value = arr.map((num => {
+  return num*5;
+}))
+arr.forEach((num,index,arr1) => {
+  arr1[index] = num+1;
+})
+
+let value = arr.reduce((previous,num) =>{
+  return previous+num;
+},0)
+let value = arr.some(num => num>=5)
+let value = arr.find(num => num>5);
+console.log(arr);
+console.log(value);
